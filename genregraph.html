@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>GenreGraph</title>
+        <script type="text/javascript" src="d3/d3.v2.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <div id="title">
+                <h2>GenreGraph</h2>
+                <div class="titletext">Explore a music collection by finding genres that share artists.</div>
+            </div>
+            <div id="controls">
+                <div id="selection" class="control">
+                    <h4>SELECTION</h4>
+                    <div class="infotext">
+                    <!-- genre selections go here -->
+                    </div>
+                </div>
+                <div id="reset"><a>Reset</a>
+                </div>
+                <div class="control">
+                    <h4>SORT</h4>
+                        <a id="counts" class="active">Total Songs</a>
+                        <a id="alpha">Name</a>
+                        <a id="popularity">Popularity</a>
+                </div>
+            </div>
+        </div>
+        <div id="chart">
+            <div class="network">
+            <!-- network graph goes here -->
+            </div>
+            <div class="artistlist">
+            <!-- artist list goes here -->
+            </div>
+            <div class="genrelist">
+            <!-- genre list goes here -->
+            </div>
+        </div>
+        <div id="key">
+            Node size represents the total number of artists each genre shares with all other genres.<br />
+            Edge size represents the total number of artists shared by two connected genres.<br />
+            All data is from my own iTunes music library. This page is best viewed at a minimum of 1152 x 864 resolution.
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html> 
